@@ -1,0 +1,20 @@
+{
+    "name": "Rendez-vous cafe | Κατάλογος",
+    "short_name": "Rendez-vous cafe",
+    "start_url": "./",
+    "display": "standalone",
+    "background_color": "#fffaf7",
+    "theme_color": "#f9d7dc",
+    "icons": [
+        {
+            "src": "icons/icon-192.png",
+            "sizes": "100x100",
+            "type": "image/png"
+        },
+        {
+            "src": "icons/icon-512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}

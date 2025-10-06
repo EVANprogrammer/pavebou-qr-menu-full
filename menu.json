@@ -1,0 +1,378 @@
+{
+  "brand": "Pavébou",
+  "currency": "€",
+  "items": [
+    {
+      "id": "br1",
+      "category": "Πρωινά",
+      "name": "Ομελέτα Κλασική",
+      "price": 6.0,
+      "description": "Αυγά, τυρί, ζαμπόν"
+    },
+    {
+      "id": "br2",
+      "category": "Πρωινά",
+      "name": "Τοστ Ζαμπόν-Τυρί",
+      "price": 3.0
+    },
+    {
+      "id": "cafe1",
+      "category": "Καφέδες",
+      "name": "Espresso",
+      "price": 2.5
+    },
+    {
+      "id": "cafe2",
+      "category": "Καφέδες",
+      "name": "Espresso Διπλός",
+      "price": 3.0
+    },
+    {
+      "id": "cafe3",
+      "category": "Καφέδες",
+      "name": "Cappuccino",
+      "price": 3.5
+    },
+    {
+      "id": "cafe4",
+      "category": "Καφέδες",
+      "name": "Freddo Espresso",
+      "price": 3.0
+    },
+    {
+      "id": "cafe5",
+      "category": "Καφέδες",
+      "name": "Freddo Cappuccino",
+      "price": 3.5
+    },
+    {
+      "id": "cafe6",
+      "category": "Καφέδες",
+      "name": "Latte",
+      "price": 3.8
+    },
+    {
+      "id": "bev1",
+      "category": "Ροφήματα",
+      "name": "Σοκολάτα Ζεστή",
+      "price": 5.5
+    },
+    {
+      "id": "bev2",
+      "category": "Ροφήματα",
+      "name": "Τσάι",
+      "price": 3.0
+    },
+    {
+      "id": "sn1",
+      "category": "Snacks",
+      "name": "Κρουασάν Βουτύρου",
+      "price": 2.5
+    },
+    {
+      "id": "sn2",
+      "category": "Snacks",
+      "name": "Μπουγάτσα Κρέμα",
+      "price": 3.2
+    },
+    {
+      "id": "cl1",
+      "category": "Club & Μπουκιές",
+      "name": "Club Κοτόπουλο",
+      "price": 8.5,
+      "description": "Ψωμί τοστ, κοτόπουλο, μπέικον, τυρί, ντομάτα, σως"
+    },
+    {
+      "id": "cl2",
+      "category": "Club & Μπουκιές",
+      "name": "Μπουκιές Κοτόπουλο",
+      "price": 7.5
+    },
+    {
+      "id": "sal1",
+      "category": "Σαλάτες",
+      "name": "Caesar's",
+      "price": 7.5,
+      "description": "Μαρούλι, κοτόπουλο, κρουτόν, παρμεζάνα, σως"
+    },
+    {
+      "id": "sal2",
+      "category": "Σαλάτες",
+      "name": "Χωριάτικη",
+      "price": 7.0
+    },
+    {
+      "id": "ice1",
+      "category": "Παγωτά",
+      "name": "Μπάλα Παγωτό",
+      "price": 2.5,
+      "description": "Επιλογή γεύσης"
+    },
+    {
+      "id": "ice2",
+      "category": "Παγωτά",
+      "name": "Milkshake Σοκολάτα",
+      "price": 5.5
+    },
+    {
+      "id": "w1",
+      "category": "Βάφλες",
+      "name": "Απόλαυση",
+      "price": 9.5,
+      "description": "Σοκολάτα, μπανάνα, παγωτό μπουένο, Digestive"
+    },
+    {
+      "id": "w2",
+      "category": "Βάφλες",
+      "name": "Αναμνήσεις",
+      "price": 9.5,
+      "description": "Λευκή σοκολάτα, μπανάνα, παγωτό φράουλα, σιρόπι φράουλα"
+    },
+    {
+      "id": "w3",
+      "category": "Βάφλες",
+      "name": "Oreo Chocolet",
+      "price": 9.5,
+      "description": "Σοκολάτα, παγωτό Oreo, μπισκότο Oreo"
+    },
+    {
+      "id": "w4",
+      "category": "Βάφλες",
+      "name": "Συνεταίροι στο Έγκλημα",
+      "price": 10.0,
+      "description": "Σοκολάτα, μπανάνα, παγωτό βανίλια, μπισκότο Oreo"
+    },
+    {
+      "id": "w5",
+      "category": "Βάφλες",
+      "name": "Treino",
+      "price": 10.5,
+      "description": "Nutella, Caprice, παγωτό Bueno"
+    },
+    {
+      "id": "w6",
+      "category": "Βάφλες",
+      "name": "Love at First Sight",
+      "price": 12.0,
+      "description": "Σοκολάτα, φράουλα, μπανάνα, παγωτό φράουλα"
+    },
+    {
+      "id": "w7",
+      "category": "Βάφλες",
+      "name": "Tutti Frutti",
+      "price": 10.5,
+      "description": "Σοκολάτα, παγωτό βανίλια, φρέσκες φράουλες, φρούτα εποχής"
+    },
+    {
+      "id": "w8",
+      "category": "Βάφλες",
+      "name": "Βάφλα Κίτρου Νάξου",
+      "price": 9.5,
+      "description": "Με παγωτό κίτρο Νάξου και σιρόπι κίτρου"
+    },
+    {
+      "id": "w9",
+      "category": "Βάφλες",
+      "name": "Βάφλα Bueno",
+      "price": 9.5,
+      "description": "Nutella, παγωτό Bueno, μπισκότο Oreo"
+    },
+    {
+      "id": "w10",
+      "category": "Βάφλες",
+      "name": "Oreo Special",
+      "price": 10.0,
+      "description": "Σοκολάτα, φράουλα, παγωτό Oreo, μπισκότο Oreo"
+    },
+    {
+      "id": "w11",
+      "category": "Βάφλες",
+      "name": "Mambo",
+      "price": 11.0,
+      "description": "Nutella, σοκολάτα γάλακτος, Digestive, παγωτό Oreo"
+    },
+    {
+      "id": "w12",
+      "category": "Βάφλες",
+      "name": "Βάφλα Καρίσιο",
+      "price": 10.5,
+      "description": "Μελομακάρονο, καρύδι, σιρόπι μελιού"
+    },
+    {
+      "id": "w13",
+      "category": "Βάφλες",
+      "name": "Βάφλα Οικογενειακή (2–3 άτομα)",
+      "price": 18.0,
+      "description": "Nutella, σοκολάτα γάλακτος, παγωτό Bueno, μπισκότο Oreo, σιρόπι φράουλας"
+    },
+    {
+      "id": "vw1",
+      "category": "Βαφλάκια",
+      "name": "Τσέκο",
+      "price": 7.0,
+      "description": "Σοκολάτα και μπισκότο"
+    },
+    {
+      "id": "vw2",
+      "category": "Βαφλάκια",
+      "name": "Ραντεβού",
+      "price": 13.5,
+      "description": "Nutella, λευκή σοκολάτα, Bueno, φράουλα & μπανάνα"
+    },
+    {
+      "id": "vw3",
+      "category": "Βαφλάκια",
+      "name": "Dubai",
+      "price": 9.0,
+      "description": "Πραλίνα φιστικιού, τραγανά κεκατάκια, παγωτό φιστίκι"
+    },
+    {
+      "id": "vw4",
+      "category": "Βαφλάκια",
+      "name": "Bueno",
+      "price": 9.5,
+      "description": "Σοκολάτα, παγωτό Bueno, Oreo"
+    },
+    {
+      "id": "vw5",
+      "category": "Βαφλάκια",
+      "name": "Caprice",
+      "price": 10.0,
+      "description": "Σοκολάτα, Caprice, παγωτό φράουλα, μπανάνα, Maltesers"
+    },
+    {
+      "id": "vw6",
+      "category": "Βαφλάκια",
+      "name": "Snickers",
+      "price": 10.0,
+      "description": "Σοκολάτα, παγωτό βανίλια, μπανάνα, καραμέλα, Snickers"
+    },
+    {
+      "id": "vw7",
+      "category": "Βαφλάκια",
+      "name": "Φρουλάκια",
+      "price": 9.0,
+      "description": "Πραλίνα φουντουκιού, Caprice, φράουλες"
+    },
+    {
+      "id": "vw8",
+      "category": "Βαφλάκια",
+      "name": "Mars",
+      "price": 10.5,
+      "description": "Σοκολάτα, λευκή σοκολάτα, μπισκότο, κομματάκια Mars"
+    },
+    {
+      "id": "vw9",
+      "category": "Βαφλάκια",
+      "name": "Lila Pause",
+      "price": 13.5,
+      "description": "Σοκολάτα, πραλίνα φράουλα, μπισκότο και Lila Pause"
+    },
+    {
+      "id": "vw10",
+      "category": "Βαφλάκια",
+      "name": "Bounty",
+      "price": 13.5,
+      "description": "Σοκολάτα, λευκή σοκολάτα, παγωτό Bounty, ινδοκάρυδο"
+    },
+    {
+      "id": "vw11",
+      "category": "Βαφλάκια",
+      "name": "Κρέμας Πατισερί",
+      "price": 12.0,
+      "description": "Κρέμα πατισερί, φράουλες, Oreo, σιρόπι φράουλας"
+    },
+    {
+      "id": "cr1",
+      "category": "Κρέπες",
+      "name": "Σοκολάτα-Μπανάνα Deluxe",
+      "price": 6.5,
+      "description": "Πλούσια σοκολάτα, μπανάνες, πουράκια, τρούφα"
+    },
+    {
+      "id": "cr2",
+      "category": "Κρέπες",
+      "name": "Bueno",
+      "price": 7.0,
+      "description": "Κρέμα φουντουκιού & λευκή σοκολάτα"
+    },
+    {
+      "id": "pc1",
+      "category": "Pancakes",
+      "name": "Pancakes Σοκολάτα",
+      "price": 7.5
+    },
+    {
+      "id": "pc2",
+      "category": "Pancakes",
+      "name": "Pancakes Μέλι-Κανέλα",
+      "price": 7.0
+    },
+    {
+      "id": "t1",
+      "category": "Γλυκά ταψιού",
+      "name": "Μπακλαβάς",
+      "price": 6.5
+    },
+    {
+      "id": "t2",
+      "category": "Γλυκά ταψιού",
+      "name": "Γαλακτομπούρεκο",
+      "price": 6.5
+    },
+    {
+      "id": "t3",
+      "category": "Γλυκά ταψιού",
+      "name": "Πορτοκαλόπιτα",
+      "price": 7.0
+    },
+    {
+      "id": "t4",
+      "category": "Γλυκά ταψιού",
+      "name": "Μελαχρινό - Καρυδόπιτα",
+      "price": 7.0
+    },
+    {
+      "id": "t5",
+      "category": "Γλυκά ταψιού",
+      "name": "Κανταΐφι",
+      "price": 6.5
+    },
+    {
+      "id": "t6",
+      "category": "Γλυκά ταψιού",
+      "name": "Ραβανί",
+      "price": 7.0
+    },
+    {
+      "id": "t7",
+      "category": "Γλυκά ταψιού",
+      "name": "Σαμαλί",
+      "price": 7.0
+    },
+    {
+      "id": "al1",
+      "category": "Ποτά",
+      "name": "Μπύρα",
+      "price": 4.0
+    },
+    {
+      "id": "al2",
+      "category": "Ποτά",
+      "name": "Κρασί Ποτήρι",
+      "price": 5.0
+    },
+    {
+      "id": "ck1",
+      "category": "Κοκτέιλ",
+      "name": "Mojito",
+      "price": 8.5
+    },
+    {
+      "id": "ck2",
+      "category": "Κοκτέιλ",
+      "name": "Aperol Spritz",
+      "price": 8.5
+    }
+  ]
+}
