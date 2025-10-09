@@ -13,19 +13,22 @@
     --text:#3b3b3b; --card-border:#f4cdd3; --shadow:0 8px 20px rgba(200,30,91,.08);
     --pad:14px; --radius:14px;
     --pill:#ffe8ee; --pill-border:#f6c7d2; --pill-active:#c81e5b;
-    --header-h: 146px; /* ύψος banner/header */
+    --header-h: 168px;   /* ΝΕΟ */
   }
   *{box-sizing:border-box}
   html,body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
 
-  /* FIXED header */
   header{
-    position:fixed; top:0; left:0; right:0; z-index:1000;
-    background:linear-gradient(180deg,#ffe7ea 0%,#fffaf7 100%);
-    padding:0; border-bottom:1px solid #f2cbd2;
+  position: fixed;      /* ΝΕΟ */
+  top: 0; left: 0; right: 0;
+  height: var(--header-h);   /* ΝΕΟ */
+  z-index: 1000;
+  background: linear-gradient(180deg,#ffe7ea 0%,#fffaf7 100%);
+  padding: 0;
+  border-bottom: 1px solid #f2cbd2;
   }
   /* δώσε χώρο στο περιεχόμενο κάτω από το fixed header */
-  body{ padding-top: var(--header-h); }
+  body{ padding-top: calc(var(--header-h) + 8px); }
 
   .banner{max-width:1180px;margin:0 auto;padding:8px var(--pad)}
   .banner .wrap{background:#fff;border:1.5px solid var(--card-border);border-radius:18px;overflow:hidden;box-shadow:0 10px 30px rgba(200,30,91,.10)}
@@ -50,9 +53,10 @@
   .emoji{ width:22px; height:22px; display:inline-flex; align-items:center; justify-content:center; }
 
   @media (max-width:900px){
-    aside{position:static}
-    .tabs{flex-direction:row;overflow-x:auto;padding:6px 0}
-    .pill{flex:0 0 auto}
+    aside{
+  position: sticky;
+  top: calc(var(--header-h) + 10px);
+  align-self: start;
   }
 
   /* offset όταν κάνεις κλικ σε κατηγορία, να μη κρύβεται κάτω από το fixed header */
