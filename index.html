@@ -31,14 +31,14 @@
     .banner img{display:block;width:100%;height:130px;object-fit:contain;background:white}
   /* FIXED header */
   header{
-    position:fixed; top:0; left:0; right:0; z-index:100;
+    position:fixed; top:0; left:0; right:0; z-index:1000;
     background:linear-gradient(180deg,#ffe7ea 0%,#fffaf7 100%);
     padding:0; border-bottom:1px solid #f2cbd2;
   }
   /* δώσε χώρο στο περιεχόμενο κάτω από το fixed header */
   body{ padding-top: var(--header-h); }
 
-    .layout{max-width:1180px;margin:16px auto;display:grid;grid-template-columns:1fr 220px;gap:16px;padding:0 var(--pad)}
+    .layout{max-width:1180px;margin:16px auto;display:grid;grid-template-columns:1fr 2200px;gap:16px;padding:0 var(--pad)}
     @media (max-width:900px){ .layout{grid-template-columns:1fr} }
   .banner{max-width:1180px;margin:0 auto;padding:8px var(--pad)}
   .banner .wrap{background:#fff;border:1.5px solid var(--card-border);border-radius:18px;overflow:hidden;box-shadow:0 10px 30px rgba(200,30,91,.10)}
