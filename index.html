@@ -13,206 +13,110 @@
       --text:#3b3b3b; --card-border:#f4cdd3; --shadow:0 8px 20px rgba(200,30,91,.08);
       --pad:14px; --radius:14px;
       --pill:#ffe8ee; --pill-border:#f6c7d2; --pill-active:#c81e5b;
-      --header-h: 160px; /* ύψος banner/header */
+
+      /* ύψος του σταθερού banner */
+      --header-h: 160px;
     }
 
     *{box-sizing:border-box}
     html,body{
-      margin:0;
-      background:var(--bg);
-      color:var(--text);
+      margin:0; background:var(--bg); color:var(--text);
       font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
     }
 
-    /* === FIXED HEADER === */
-    header{
+    /* ===== ΣΤΑΘΕΡΟ (FIXED) HEADER ===== */
+    /* χρησιμοποιούμε νέο id για να αποφύγουμε σύγκρουση με παλιά rules */
+    #fixedHeader{
       position:fixed;
       top:0; left:0; right:0;
       height:var(--header-h);
-      z-index:1000;
+      z-index:9999;
       background:linear-gradient(180deg,#ffe7ea 0%,#fffaf7 100%);
       border-bottom:1px solid #f2cbd2;
-      padding:0;
-      display:flex;
-      align-items:center;
-      justify-content:center;
     }
 
-    /* δώσε χώρο στο περιεχόμενο κάτω από το header */
+    /* αφήνουμε χώρο για το σταθερό header */
     body{ padding-top: calc(var(--header-h) + 8px); }
 
     .banner{
-      max-width:1180px;
-      width:100%;
-      height:100%;
-      padding:8px var(--pad);
-      display:flex;
-      align-items:center;
-      justify-content:center;
+      max-width:1180px; margin:0 auto; padding:8px var(--pad);
+      height:100%; display:flex; align-items:center;
     }
-
     .banner .wrap{
       width:100%;
-      background:#fff;
-      border:1.5px solid var(--card-border);
-      border-radius:18px;
-      overflow:hidden;
+      background:#fff; border:1.5px solid var(--card-border);
+      border-radius:18px; overflow:hidden;
       box-shadow:0 10px 30px rgba(200,30,91,.10);
     }
-
     .banner img{
-      display:block;
-      width:100%;
-      height:130px;
-      object-fit:contain;
-      background:#fff;
+      display:block; width:100%; height:130px;
+      object-fit:contain; background:#fff;
     }
 
-    /* === ΚΥΡΙΟ LAYOUT === */
+    /* ===== ΚΥΡΙΟ LAYOUT ===== */
     .layout{
-      max-width:1180px;
-      margin:16px auto;
-      display:grid;
-      grid-template-columns:1fr 220px;
-      gap:16px;
-      padding:0 var(--pad);
+      max-width:1180px; margin:16px auto; display:grid;
+      grid-template-columns:1fr 220px; gap:16px; padding:0 var(--pad);
     }
-    @media (max-width:900px){
-      .layout{grid-template-columns:1fr}
-    }
+    @media (max-width:900px){ .layout{ grid-template-columns:1fr } }
 
-    /* === SIDEBAR ΚΑΤΗΓΟΡΙΩΝ === */
-    aside{
-      position:sticky;
-      top:calc(var(--header-h) + 10px);
-      align-self:start;
-    }
-    .tabs{
-      display:flex;
-      flex-direction:column;
-      gap:10px;
-    }
+    /* sidebar κατηγοριών να ξεκινά κάτω από το fixed header */
+    aside{ position:sticky; top:calc(var(--header-h) + 10px); align-self:start }
+    .tabs{ display:flex; flex-direction:column; gap:10px }
     .pill{
-      display:flex;
-      align-items:center;
-      gap:8px;
-      padding:10px 12px;
-      border-radius:999px;
-      border:1.5px solid var(--pill-border);
-      background:var(--pill);
-      color:#7a1b39;
-      font-weight:800;
-      font-size:14px;
+      display:flex; align-items:center; gap:8px;
+      padding:10px 12px; border-radius:999px; border:1.5px solid var(--pill-border);
+      background:var(--pill); color:#7a1b39; font-weight:800; font-size:14px;
       box-shadow:0 6px 18px rgba(200,30,91,.10);
-      cursor:pointer;
-      text-align:left;
-      transition: transform .12s ease, background .12s ease, box-shadow .12s ease;
+      cursor:pointer; text-align:left;
+      transition: transform .12s, background .12s, box-shadow .12s;
     }
-    .pill:hover{
-      transform:translateY(-1px);
-      box-shadow:0 10px 24px rgba(200,30,91,.15);
-    }
-    .pill.active{
-      background:var(--pill-active);
-      border-color:var(--pill-active);
-      color:#fff;
-    }
-    .emoji{
-      width:22px; height:22px;
-      display:inline-flex;
-      align-items:center;
-      justify-content:center;
-    }
+    .pill:hover{ transform:translateY(-1px); box-shadow:0 10px 24px rgba(200,30,91,.15) }
+    .pill.active{ background:var(--pill-active); border-color:var(--pill-active); color:#fff }
+    .emoji{ width:22px; height:22px; display:inline-flex; align-items:center; justify-content:center }
 
     @media (max-width:900px){
-      aside{position:static}
-      .tabs{flex-direction:row;overflow-x:auto;padding:6px 0}
-      .pill{flex:0 0 auto}
+      aside{ position:static }
+      .tabs{ flex-direction:row; overflow-x:auto; padding:6px 0 }
+      .pill{ flex:0 0 auto }
     }
 
-    /* === ΚΑΡΤΕΣ / ΚΑΤΗΓΟΡΙΕΣ === */
+    /* ===== ΚΑΤΗΓΟΡΙΕΣ / ΚΑΡΤΕΣ ===== */
     section.category{
-      position:relative;
-      border:1px solid var(--card-border);
-      border-radius:16px;
-      background:#fff;
-      scroll-margin-top:calc(var(--header-h) + 20px);
-      margin-bottom:16px;
+      position:relative; border:1px solid var(--card-border); border-radius:16px; background:#fff;
+      scroll-margin-top:calc(var(--header-h) + 20px); margin-bottom:16px;
     }
-
     .cat-header{
-      padding:12px 14px;
-      font-weight:900;
-      font-size:18px;
-      color:#7a1b39;
-      background:rgba(253,226,228,.85);
-      border-bottom:1px solid var(--card-border);
+      padding:12px 14px; font-weight:900; font-size:18px; color:#7a1b39;
+      background:rgba(253,226,228,.85); border-bottom:1px solid var(--card-border);
     }
-
-    .grid{
-      display:grid;
-      grid-template-columns:repeat(auto-fill,minmax(260px,1fr));
-      gap:10px;
-      padding:12px;
-    }
-
-    .card{
-      border:1.5px solid var(--card-border);
-      border-radius:12px;
-      background:#fff;
-      box-shadow:var(--shadow);
-    }
-
-    .row{
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      gap:8px;
-      padding:12px;
-    }
-
-    .title{font-weight:800;color:#7a1b39}
-    .price{font-weight:800;color:#7a1b39}
-
-    details{
-      border-top:1px dashed #f0c9cf;
-      padding:0 12px 12px 12px;
-    }
-
-    details summary{
-      list-style:none;
-      cursor:pointer;
-      color:#7a1b39;
-      padding:10px 0;
-      font-weight:600;
-    }
+    .grid{ display:grid; grid-template-columns:repeat(auto-fill,minmax(260px,1fr)); gap:10px; padding:12px }
+    .card{ border:1.5px solid var(--card-border); border-radius:12px; background:#fff; box-shadow:var(--shadow) }
+    .row{ display:flex; align-items:center; justify-content:space-between; gap:8px; padding:12px }
+    .title{ font-weight:800; color:#7a1b39 }
+    .price{ font-weight:800; color:#7a1b39 }
+    details{ border-top:1px dashed #f0c9cf; padding:0 12px 12px 12px }
+    details summary{ list-style:none; cursor:pointer; color:#7a1b39; padding:10px 0; font-weight:600 }
 
     .cat-inline{
-      display:block;
-      margin:6px 8px 14px auto;
-      width:260px;
-      border-radius:14px;
-      box-shadow:0 10px 30px rgba(200,30,91,.10);
-      border:1px solid var(--card-border);
+      display:block; margin:6px 8px 14px auto; width:260px; border-radius:14px;
+      box-shadow:0 10px 30px rgba(200,30,91,.10); border:1px solid var(--card-border);
     }
+    @media (max-width:640px){ .cat-inline{ width:180px } }
 
-    @media (max-width:640px){
-      .cat-inline{width:180px}
-    }
-
-    footer{
-      text-align:center;
-      color:#856b73;
-      font-size:12px;
-      padding:26px 10px;
-    }
+    footer{ text-align:center; color:#856b73; font-size:12px; padding:26px 10px }
   </style>
-
 </head>
 <body>
-<header>
-  <div class="banner"><div class="wrap"><img src="assets/logo.png" alt="Pavébou banner"/></div></div>
-</header>
+
+<!-- ΣΤΑΘΕΡΟ FIXED BANNER -->
+<div id="fixedHeader">
+  <div class="banner">
+    <div class="wrap">
+      <img src="assets/logo.png" alt="Ραντεβού banner">
+    </div>
+  </div>
+</div>
 
 <div class="layout">
   <main id="content"></main>
